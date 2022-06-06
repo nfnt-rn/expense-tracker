@@ -29,6 +29,7 @@ module.exports = {
     new htmlwebpackplugin({
       template: "./src/template.html",
       filename: "index.html",
+      favicon: "./src/images/favicon-32x32.png",
     }),
     new minicssextractplugin({
       filename: "[name].[contenthash].css",
