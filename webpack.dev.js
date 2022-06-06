@@ -8,11 +8,16 @@ module.exports = {
   entry: {
     app: "./src/index.js",
   },
+  output: {
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    assetModuleFilename: "images/[name][ext]",
+  },
   module: {
     rules: [
       {
         test: /.(jpe?g|svg|png|gif)$/,
-        use: "asset/resource",
+        type: "asset/resource",
       },
       {
         test: /.styl$/,
@@ -20,10 +25,7 @@ module.exports = {
       },
     ],
   },
-  output: {
-    filename: "[name].[contenthash].bundle.js",
-    path: path.resolve(__dirname, "dist"),
-  },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html",

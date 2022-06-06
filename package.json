@@ -17,5 +17,8 @@
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack-dev-server --config webpack.dev.js",
     "deploy": "npm run build && cd dist/ && vercel --prod"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
   }
 }

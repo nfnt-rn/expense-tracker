@@ -1,0 +1,51 @@
+@import './variables.styl';
+
+.graph-container {
+    background: $Very-pale-orange;
+    padding: 20px 20px 0;
+    margin: 20px 0;
+    border-radius: $border-radius;
+    color: $Medium-brown;
+
+    @media screen and (min-width: 600px) {
+        padding: 20px 25px 0;
+    }
+
+    &-title {
+        font-size: 28px;
+        margin: 10px 0;
+        color: $Dark-brown;
+    }
+
+    &-section-title, &-section-price-month {
+        font-size: 17px;
+        color: $Medium-brown;
+        line-height: 24px;
+    }
+
+    &-separator {
+        width: 100%;
+        height: 3.2px;
+        background: $Cream;
+    }
+
+    &-section {
+        padding: 20px 0;
+    }
+
+    &-section-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-section-price-dollar, &-section-price-perc {
+        color: $Dark-brown;
+        font-weight: bold;
+    }
+
+    &-section-price-details {
+        text-align: right;
+        line-height: 24px;
+    }
+}

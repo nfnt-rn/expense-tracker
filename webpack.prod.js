@@ -17,7 +17,7 @@ module.exports = {
     rules: [
       {
         test: /.(jpe?g|svg|png|gif)$/,
-        use: "asset/resource",
+        type: "asset/resource",
       },
       {
         test: /.styl$/,
