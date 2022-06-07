@@ -7,7 +7,7 @@ export default function Graph() {
     view: function () {
       return m("main", { class: "graph-container" }, [
         //1. header
-        m("h3", { class: "graph-container-title" }, "Spending - Last 7 days"),
+        m("h2", { class: "graph-container-title" }, "Spending - Last 7 days"),
         //2. chart
         //3. summary
         m(Chart),

@@ -12,7 +12,7 @@ export default function Chart() {
         "ul",
         { class: "chart-container" },
         spent.map((val, i) => {
-          return m("div", { class: "chart-container-inner" }, [
+          return m("li", { class: "chart-container-inner" }, [
             m(
               "p",
               {
@@ -22,7 +22,7 @@ export default function Chart() {
               },
               "$" + val.toString()
             ),
-            m("li", {
+            m("span", {
               onmouseover: function () {
                 let s = document.getElementById(
                   `chart-container-inner-item-${i}`
